@@ -1,0 +1,16 @@
+<h2><%= l(:codebook_index_title) %></h2>
+
+<h4>Welcome <%= @user.firstname %>, you currently have <%=@snippets.size%> gems of code in 
+<%= pluralize(@languages.size, 'language') %> and <%= pluralize(@categories.size, 'category') %> available</h4>
+
+  <div id="dashboard">
+  </div>
+
+<% content_for :sidebar do %>
+<h3>Codebook Menu</h3>
+<ul>
+  <li><%= link_to 'View Code', :controller => 'codebook', :action => 'find' %></li>
+  <li><%= link_to 'Administration', :controller => 'codebook', :action => 'admin' %></li>
+</li>
+
+<% end %>

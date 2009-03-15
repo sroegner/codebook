@@ -1,0 +1,42 @@
+<h2><%= l(:codebook_admin_title) %></h2>
+
+<h4><%= l(:codebook_admin_text) %></h4>
+
+  <div id="dashboard">
+    <div id="new_language" style="float:left; padding:20px 30px; width: 400px;">
+      <% form_for :code_language, @language, 
+                  :url => { :action => "create_category" }, 
+                  :html => {:class => "nifty_form"} do |f| %>  
+          <%= f.label l(:codebook_admin_label_language) %><br />
+          <%= f.text_field :name %>
+          <%= submit_tag "Go!" %>
+      <% end %> 
+      <ul>
+      <% @languages.each do |l| %>
+        <li><%=h l.name %> (<%= link_to_if( l.has_no_documents?, "Delete", :action => "destroy_category", :language_id => l.id)%>)</li>
+      <% end %></ul>
+    </div>
+    
+    <div id="new_category" style="float: left; padding:20px 30px; width: 400px;">
+      <% form_for :code_area, @area, 
+                  :url => { :action => "create_category" }, 
+                  :html => {:class => "nifty_form"} do |f| %>  
+          <%= f.label l(:codebook_admin_label_area) %><br />
+          <%= f.text_field :name %>
+          <%= submit_tag "Go!" %>
+      <% end %> 
+      <ul>
+      <% @areas.each do |l| %>
+        <li><%=h l.name %> (<%= link_to_if( l.has_no_documents?, "Delete", :action => "destroy_category", :area_id => l.id)%>)</li>
+      <% end %></ul>
+    </div>    
+  </div>
+
+<% content_for :sidebar do %>
+<h3>Codebook Menu</h3>
+<ul>
+  <li><%= link_to 'View Code', :url => {:controller => 'codebook', :action => 'find' } %></li>
+  <li>Administration</li>
+</li>
+
+<% end %>

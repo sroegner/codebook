@@ -1,0 +1,35 @@
+<h2><%= l(:codebook_index_title) %></h2>
+
+<h4>Welcome <%= @user.firstname %>, you currently have <%=@snippets.size%> gems of code in 
+<%= pluralize(@languages.size, 'language') %> and <%= pluralize(@categories.size, 'category') %> available</h4>
+
+  <div id="dashboard">
+    <div id="new_language">
+      <% form_for :code_language, @language, 
+                  :url => { :action => "create_language" }, 
+                  :html => {:class => "nifty_form"} do |f| %>  
+          <%= f.label 'Add a language' %>
+          <%= f.text_field :name %>
+          <%= submit_tag "Go!" %>
+      <% end %> 
+    </div>
+    
+    <div id="new_category">
+      <% form_for :code_area, @area, 
+                  :url => { :action => "create_area" }, 
+                  :html => {:class => "nifty_form"} do |f| %>  
+          <%= f.label 'Add a category' %>
+          <%= f.text_field :name %>
+          <%= submit_tag "Go!" %>
+      <% end %> 
+    </div>    
+  </div>
+
+<% content_for :sidebar do %>
+<h3>Codebook Menu</h3>
+<ul>
+  <li><%= link_to 'View Code', :url => {:controller => 'codebook', :action => 'find' } %></li>
+  <li>Administration</li>
+</li>
+
+<% end %>
