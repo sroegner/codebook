@@ -1,3 +1,6 @@
 = codebook
 
-Description goes here
+The codebook redmine plugin is my personal journey into the world of redMine and rails engines.
+You probably don't want to use it right now, as it is not complete.
+
+cheers
