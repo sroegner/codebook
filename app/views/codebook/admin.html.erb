@@ -33,10 +33,9 @@
   </div>
 
 <% content_for :sidebar do %>
-<h3>Codebook Menu</h3>
-<ul>
-  <li><%= link_to 'View Code', :url => {:controller => 'codebook', :action => 'find' } %></li>
-  <li>Administration</li>
-</li>
-
+  <h3>Codebook Menu</h3>
+  <ul>
+    <li><%= link_to 'View Code', :controller => 'codebook', :action => 'find' %></li>
+    <li class="active">Administration</li>
+  </li>
 <% end %>
