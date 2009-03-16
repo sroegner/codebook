@@ -5,8 +5,8 @@ class CodebookController < ApplicationController
   
   def index
     @snippets = CodeDocument.find(:all)
-    @languages = CodeLanguage.find(:all)
-    @areas = CodeArea.find(:all)
+    @languages = CodeLanguage.find(:all) || []
+    @areas = CodeArea.find(:all) || []
 
   end
 
@@ -17,11 +17,12 @@ class CodebookController < ApplicationController
     @language = CodeLanguage.new
   end
   
-  def new_code
-    @code_ocument
+  def new
+    @code_document = CodeDocument.new()
+    @languages = CodeLanguage.find(:all, :order => 'name ASC')
   end
 
-  def create_code
+  def create
     
   end
   

@@ -1,1 +1,21 @@
-<h2>new</h2>
+<h2>Share some Code today!</h2>
+
+<% form_for :code_document, @code_document, :url => { :action => "create" }, :html => {:class => "nifty_form"} do |f| %>
+    <%= f.text_field :title %><br />
+    <%= f.text_area :description, :size => "80x4" %><br />
+    <%= f.text_area :code, :size => "80x20" %><br />
+    <%= collection_select(:code_document, :language_id, CodeLanguage.all, :id, :name) %>
+    <%= collection_select(:code_document, :category_id, CodeArea.all, :id, :name) %> 
+    <p><%= submit_tag "Create" %></p>
+
+<% end %> 
+
+<% content_for :sidebar do %>
+<h3>Codebook Menu</h3>
+<ul>
+  <li><%= link_to 'Codebook Dashboard', :controller => 'codebook', :action => 'index' %></li>
+  <li class="active">Add Code</li>
+  <li><%= link_to 'Administration', :controller => 'codebook', :action => 'admin' %></li>
+</li>
+
+<% end %>
