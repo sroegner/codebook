@@ -1,3 +1,7 @@
+<% content_for :header_tags do %>
+    <%= stylesheet_link_tag 'scm' %>
+<% end %>
+
 <h2><%= @code_document.title %></h2>
 
 <p id="document_meta">
@@ -14,8 +18,8 @@
   
   <p><%= @code_document.description %></p>
 
-  <div id="code_display">
-    <%= @parsed %>  
+  <div id="code_display" class="filecontent CodeRay">
+    <%= code_highlight(@code_document.code_language.name, @code_document.code) %>  
   </div>
 </div>
 
