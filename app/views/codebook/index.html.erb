@@ -1,9 +1,15 @@
 <h2><%= l(:codebook_index_title) %></h2>
 
-<h4>Welcome <%= @user.firstname %>, you currently have <%=@snippets.size%> gems of code 
-in <%= pluralize(@languages.size, 'language') %> and <%= pluralize(@areas.size, 'category') %> available</h4>
+<h4>Welcome <%= @user.firstname %>, you currently have <%= pluralize(@code_documents.size, 'gem') %> of code available</h4>
 
   <div id="dashboard">
+    <%- unless @code_documents.empty? -%>
+      <h4>Code Documents</h4>
+      <table id="index_doc_table" class="list">
+        <tr><th>title</th><th>description</th><th>Author</th><th>programming language</th><th>area</th></tr>
+        <%= render :partial => "code_document", :collection => @code_documents, :as => :doc %>
+      </table>    
+    <%- end -%> 
   </div>
 
 <% content_for :sidebar do %>
@@ -11,7 +17,7 @@ in <%= pluralize(@languages.size, 'language') %> and <%= pluralize(@areas.size, 
 <ul>
   <li class="active">Codebook Dashboard</li>
   <li><%= link_to 'View Code', :controller => 'codebook', :action => 'find' %></li>
-  <li><%= link_to 'Add Code', :controller => 'codebook', :action => 'new_code' %></li>
+  <li><%= link_to 'Add Code', :controller => 'codebook', :action => 'new' %></li>
   <li><%= link_to 'Administration', :controller => 'codebook', :action => 'admin' %></li>
 </li>
 

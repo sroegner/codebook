@@ -1,13 +1,14 @@
 class CreateCodeDocuments < ActiveRecord::Migration
   def self.up
     create_table :code_documents do |t|
-      t.column :id, :integer
-      t.column :title, :string
-      t.column :description, :text
-      t.column :code, :text
-      t.column :category_id, :integer
-      t.column :language_id, :integer
-      t.column :author_id, :integer
+      t.integer :id
+      t.string :title, :limit => 60
+      t.text :description
+      t.text :code
+      t.integer :category_id
+      t.integer :language_id
+      t.integer :author_id
+      t.timestamps
     end
   end
 

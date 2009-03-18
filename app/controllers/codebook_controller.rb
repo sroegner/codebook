@@ -4,26 +4,29 @@ class CodebookController < ApplicationController
   before_filter :get_user
   
   def index
-    @snippets = CodeDocument.find(:all)
-    @languages = CodeLanguage.find(:all) || []
-    @areas = CodeArea.find(:all) || []
-
+    @code_documents = CodeDocument.find(:all)
   end
 
   def admin
-    @languages = CodeLanguage.find(:all, :order => 'name ASC')
-    @areas = CodeArea.find(:all, :order => 'name ASC')
+    @languages = CodeLanguage.ordered
+    @areas = CodeArea.ordered
     @area = CodeArea.new
     @language = CodeLanguage.new
   end
   
   def new
     @code_document = CodeDocument.new()
-    @languages = CodeLanguage.find(:all, :order => 'name ASC')
   end
 
   def create
-    
+    params[:code_document][:author_id] = @user.id
+    @doc = CodeDocument.new(params[:code_document])
+    if @doc.save
+      flash.now[:notice] = 'Your Code Document was successfully created.'
+      redirect_to :action => :index
+    else
+      render :action => "new"
+    end
   end
   
   def create_category
@@ -70,6 +73,26 @@ class CodebookController < ApplicationController
     else
       @user = User.current  
     end
+  end
+  
+  def add_default_enums
+    langs = ["Java", "Ruby", "Python", "C", "C++", "Ant", "Bash"]
+    areas = ["Web", "Database", "Unittest", "Windows", "Linux"]
+
+    if CodeLanguage.find(:all).size == 0
+      langs.each do |l| 
+        new_l = CodeLanguage.create(:name => l)
+        new_l.save
+      end
+    end
+
+    if CodeArea.find(:all).size == 0
+      areas.each do |a| 
+        new_a = CodeArea.create(:name => a)
+        new_a.save
+      end
+    end
+    redirect_to :action => 'admin'
   end
 
 end

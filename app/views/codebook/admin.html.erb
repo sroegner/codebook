@@ -3,6 +3,14 @@
 <h4><%= l(:codebook_admin_text) %></h4>
 
   <div id="dashboard">
+
+    <div id="set_defaults">
+      <%- if @languages.empty? or @areas.empty? -%>
+        You can add some default values here.
+        <%= button_to "Go", :controller => "codebook", :action => "add_default_enums" %>
+      <%- end -%>
+    </div>
+
     <div id="new_language" style="float:left; padding:20px 30px; width: 400px;">
       <% form_for :code_language, @language, 
                   :url => { :action => "create_category" }, 
