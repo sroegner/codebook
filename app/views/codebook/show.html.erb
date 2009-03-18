@@ -1,0 +1,30 @@
+<h2><%= @code_document.title %></h2>
+
+<p id="document_meta">
+<%= l(:codebook_form_label_author) %>
+<%= @code_document.authorname %>
+<%= l(:codebook_form_label_lang)%>
+<%= @code_document.code_language.name %>
+<%= l(:codebook_form_label_desc)%>
+<%= @code_document.code_area.name %>
+</p>
+
+<hr />
+<div class="box">
+  
+  <p><%= @code_document.description %></p>
+
+  <div id="code_display">
+    <%= @parsed %>  
+  </div>
+</div>
+
+<% content_for :sidebar do %>
+<h3>Codebook Menu</h3>
+<ul>
+  <li><%= link_to 'Codebook Dashboard', :controller => 'codebook', :action => 'index' %></li>
+  <li><%= link_to 'Add Code', :controller => 'codebook', :action => 'new' %></li>
+  <li><%= link_to 'Administration', :controller => 'codebook', :action => 'admin' %></li>
+</li>
+
+<% end %>

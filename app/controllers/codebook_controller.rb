@@ -56,10 +56,36 @@ class CodebookController < ApplicationController
     redirect_to :action => 'admin'
   end
 
+  def edit
+    @code_document = CodeDocument.find(params[:id])
+  end
+  
   def update
+    params[:code_document][:author_id] = @user.id
+    @code_document = CodeDocument.find(params[:id])
+    if @code_document.update_attributes(params[:code_document])
+      redirect_to :action => "show", :id => @code_document
+    else
+      render :action => "edit"
+    end
   end
 
   def destroy
+    @code_document = CodeDocument.find(params[:id])
+    flash.now[:error] = "Cannot delete code document" unless @code_document.destroy
+    redirect_to :action => :index
+  end
+
+  def show
+    @code_document = CodeDocument.find(params[:id])
+    @parsed = parse_coderay(@code_document.code)
+  end
+
+  def parse_coderay(text)
+    text.scan(/(<code\:([a-z].+?)>(.+?)<\/code>)/m).each do |match|
+      text.gsub!(match[0],CodeRay.scan(match[2], match[1].to_sym).div( :line_numbers => :table,:css => :class))
+    end
+    text
   end
 
   def find
@@ -76,8 +102,8 @@ class CodebookController < ApplicationController
   end
   
   def add_default_enums
-    langs = ["Java", "Ruby", "Python", "C", "C++", "Ant", "Bash"]
-    areas = ["Web", "Database", "Unittest", "Windows", "Linux"]
+    langs = ["Java", "Ruby", "Python", "C", "C++", "Ant", "Bash", "Sql", "Pl/Sql"]
+    areas = ["Web", "Database", "Unittest", "Windows", "Linux", "Misc"]
 
     if CodeLanguage.find(:all).size == 0
       langs.each do |l| 

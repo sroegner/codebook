@@ -1,0 +1,28 @@
+<h2>Editing Document <% @code_document.id %></h2>
+
+<div class="box">
+  
+<% form_for :code_document, @code_document, :url => { :action => "update", :id => @code_document }, :html => {:class => "nifty_form"} do |f| %>
+    <p><%= f.label l(:codebook_form_label_title) %><%= f.text_field :title %>
+        <%= f.label l(:codebook_form_label_lang)%><%= collection_select(:code_document, :language_id, CodeLanguage.ordered, :id, :name) %>
+        <%= f.label l(:codebook_form_label_area)%><%= collection_select(:code_document, :category_id, CodeArea.ordered, :id, :name) %>
+    </p>
+    <p><hr /></p>
+    <p><%= f.label l(:codebook_form_label_desc)%><br/><%= f.text_area :description, :size => "120x2" %></p>
+    <p><%= f.label l(:codebook_form_label_code)%><br/><%= f.text_area :code, :size => "120x20" %></p>
+
+ 
+    <p><%= submit_tag "Update" %></p>
+<% end %> 
+
+</div>
+
+<% content_for :sidebar do %>
+<h3>Codebook Menu</h3>
+<ul>
+  <li><%= link_to 'Codebook Dashboard', :controller => 'codebook', :action => 'index' %></li>
+  <li><%= link_to 'Add Code', :controller => 'codebook', :action => 'new' %></li>
+  <li><%= link_to 'Administration', :controller => 'codebook', :action => 'admin' %></li>
+</li>
+
+<% end %>

@@ -2,7 +2,9 @@
 <tr>
   <td id="cd_title"><%= link_to h(code_document.title), :controller => :codebook, :action => :show, :id => code_document %></td>
   <td id="cd_desc"><%= truncate(code_document.description) %></td>
-  <td id="cd_desc"><%= truncate(code_document.authorname) %></td>
-  <td id="cd_title"><%= h code_document.code_language.name %></td>
-  <td id="cd_title"><%= h code_document.code_area.name %></td>
+  <td id="cd_author"><%= truncate(code_document.authorname) %></td>
+  <td id="cd_lang"><%= h code_document.code_language.name %></td>
+  <td id="cd_area"><%= h code_document.code_area.name %></td>
+  <td id="cd_actions"><%= link_to "Edit", :controller => :codebook, :action => :edit, :id => code_document.id %>&nbsp;
+                      <%= link_to "Delete", { :controller => :codebook, :action => :destroy, :id => code_document.id }, :confirm => "Are you sure?", :method => :delete %></td>
 </tr>

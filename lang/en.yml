@@ -8,6 +8,7 @@ codebook_admin_label_language: Add a programming language
 codebook_admin_label_area: Add a Category
 codebook_form_label_title: Title
 codebook_form_label_area: Area
+codebook_form_label_author: Author
 codebook_form_label_lang: Language
 codebook_form_label_desc: A brief description
 codebook_form_label_code: The source code

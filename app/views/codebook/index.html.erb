@@ -6,7 +6,7 @@
     <%- unless @code_documents.empty? -%>
       <h4>Code Documents</h4>
       <table id="index_doc_table" class="list">
-        <tr><th>title</th><th>description</th><th>Author</th><th>programming language</th><th>area</th></tr>
+        <tr><th>Title</th><th>Description</th><th>Author</th><th>Language</th><th>Area</th><th>Actions</th></tr>
         <%= render :partial => "code_document", :collection => @code_documents, :as => :doc %>
       </table>    
     <%- end -%> 
@@ -16,7 +16,6 @@
 <h3>Codebook Menu</h3>
 <ul>
   <li class="active">Codebook Dashboard</li>
-  <li><%= link_to 'View Code', :controller => 'codebook', :action => 'find' %></li>
   <li><%= link_to 'Add Code', :controller => 'codebook', :action => 'new' %></li>
   <li><%= link_to 'Administration', :controller => 'codebook', :action => 'admin' %></li>
 </li>
