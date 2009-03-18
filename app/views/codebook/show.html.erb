@@ -1,11 +1,12 @@
 <% content_for :header_tags do %>
     <%= stylesheet_link_tag 'scm' %>
+    <%= stylesheet_link_tag 'codebook', :plugin => 'codebook' %>
 <% end %>
 
 <h2><%= @code_document.title %></h2>
 
 <p id="document_meta">
-<%= l(:codebook_form_label_author) %>
+<span class="cb_label"><%= l(:codebook_form_label_author) %></span>
 <%= @code_document.authorname %>
 <%= l(:codebook_form_label_lang)%>
 <%= @code_document.code_language.name %>
@@ -18,9 +19,19 @@
   
   <p><%= @code_document.description %></p>
 
-  <div id="code_display" class="filecontent CodeRay">
-    <%= code_highlight(@code_document.code_language.name, @code_document.code) %>  
-  </div>
+  <table id="code_display" class="filecontent CodeRay">
+  <tbody>
+  <% line_num = 1 %>
+    <% code_highlight(@code_document.code_language.name, @code_document.code).each_line do |line| %>
+      <tr>
+        <th class="line-num" id="L<%= line_num %>"><a href="#L<%= line_num %>"><%= line_num %></a></th>
+        <td class="line-code"><pre><%= line %></pre></td>
+      </tr>
+      <% line_num += 1 %>
+    <% end %>
+    </tbody>
+  </table>
+<p><%= button_to "Edit", :controller => :codebook, :action => :edit, :id => @code_document %></p>
 </div>
 
 <% content_for :sidebar do %>
