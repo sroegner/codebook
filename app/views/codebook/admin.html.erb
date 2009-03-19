@@ -1,7 +1,6 @@
 <h2><%= l(:codebook_admin_title) %></h2>
 
 <h4><%= l(:codebook_admin_text) %></h4>
-
   <div id="dashboard">
 
     <div id="set_defaults">
@@ -11,19 +10,28 @@
       <%- end -%>
     </div>
 
-    <div class="box" id="new_language" style="float:left; padding:20px 30px; width: 400px;">
+    <div class="box" id="new_language" style="float:left; padding:20px 30px; width: 300px;">
+      <span class="cb_label"><%= l(:codebook_admin_label_language) %></span>
       <% form_for :code_language, @language, 
                   :url => { :action => "create_category" }, 
                   :html => {:class => "nifty_form"} do |f| %>  
-          <%= f.label l(:codebook_admin_label_language) %><br />
-          <%= f.text_field :name %>
+          <%= f.text_field :name, :size => 20 %>
           <%= submit_tag "Go!" %>
       <% end %> 
-      <ul>
-      <% @languages.each do |l| %>
-        <li><%=h l.name %> (<%= link_to_if( l.has_no_documents?, "Delete", :action => "destroy_category", :language_id => l.id)%>)</li>
-      <% end %></ul>
+      <hr />
+      <span class="cb_label"><%= l(:codebook_admin_label_available) %></span>
+      <table style="width: 280px;">
+      <thead>
+        <tr><th>Language</th><th></th><th>Actions</th></tr>
+      </thead>
+      <tbody>
+        <%- renderable = supported_languages() -%>
+        <%= render :partial => 'code_language', :collection => @languages, :locals => { :supported => renderable } %>
+      </tbody>
+      </table>
     </div>
+
+    <div style="float: left; padding:20px; width: 40px;"></div>
     
     <div class="box" id="new_category" style="float: left; padding:20px 30px; width: 400px;">
       <% form_for :code_area, @area, 

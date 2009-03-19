@@ -4,7 +4,8 @@ codebook_settings_label: Codebook Settings
 codebook_settings_text: here comes some text
 codebook_admin_title: Codebook Code Sharing Administration
 codebook_admin_text: Add Languages or Categories here; you can delete all items that have no code document assigned to them
-codebook_admin_label_language: Add a programming language
+codebook_admin_label_language: Add a programming Language
+codebook_admin_label_available: Currently available Languages
 codebook_admin_label_area: Add a Category
 codebook_form_label_title: Title
 codebook_form_label_area: Area
