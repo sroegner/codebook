@@ -1,0 +1,10 @@
+
+<tr>
+  <td id="cd_title"><%= link_to h(code_document.title), code_document_path(code_document) %></td>
+  <td id="cd_desc"><%= truncate(code_document.description) %></td>
+  <td id="cd_author"><%= truncate(code_document.authorname) %></td>
+  <td id="cd_lang"><%= h code_document.code_language.name %></td>
+  <td id="cd_area"><%= h code_document.code_area.name %></td>
+  <td id="cd_actions"><%= link_to "Edit", edit_code_document_path(code_document) %>&nbsp;
+                      <%= link_to "Delete", code_document_path(code_document), :confirm => "Are you sure?", :method => :delete %></td>
+</tr>

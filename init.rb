@@ -1,5 +1,6 @@
 require 'redmine'
 
+# shamelessly copied from the stuff-to-do plugin by Eric Davis  
 Dir[File.join(directory,'vendor','plugins','*')].each do |dir|
   path = File.join(dir, 'lib')
   $LOAD_PATH << path

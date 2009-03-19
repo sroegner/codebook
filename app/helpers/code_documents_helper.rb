@@ -1,4 +1,4 @@
-module CodebookHelper
+module CodeDocumentsHelper
 
   require 'coderay'
 

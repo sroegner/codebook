@@ -13,11 +13,6 @@
   </div>
 
 <% content_for :sidebar do %>
-<h3>Codebook Menu</h3>
-<ul>
-  <li class="active">Codebook Dashboard</li>
-  <li><%= link_to 'Add Code', :controller => 'codebook', :action => 'new' %></li>
-  <li><%= link_to 'Administration', :controller => 'codebook', :action => 'admin' %></li>
-</li>
-
+  <%= render :partial => 'codebook/menu' %>
 <% end %>
+

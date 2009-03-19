@@ -4,7 +4,7 @@ class CodebookController < ApplicationController
   before_filter :get_user
   
   def index
-    @code_documents = CodeDocument.find(:all)
+    redirect_to code_documents_path
   end
 
   def admin
@@ -14,20 +14,6 @@ class CodebookController < ApplicationController
     @language = CodeLanguage.new
   end
   
-  def new
-    @code_document = CodeDocument.new()
-  end
-
-  def create
-    params[:code_document][:author_id] = @user.id
-    @doc = CodeDocument.new(params[:code_document])
-    if @doc.save
-      flash.now[:notice] = 'Your Code Document was successfully created.'
-      redirect_to :action => :index
-    else
-      render :action => "new"
-    end
-  end
   
   def create_category
     if params[:code_language]
@@ -54,41 +40,6 @@ class CodebookController < ApplicationController
     end
     
     redirect_to :action => 'admin'
-  end
-
-  def edit
-    @code_document = CodeDocument.find(params[:id])
-  end
-  
-  def update
-    params[:code_document][:author_id] = @user.id
-    @code_document = CodeDocument.find(params[:id])
-    if @code_document.update_attributes(params[:code_document])
-      redirect_to :action => "show", :id => @code_document
-    else
-      render :action => "edit"
-    end
-  end
-
-  def destroy
-    @code_document = CodeDocument.find(params[:id])
-    flash.now[:error] = "Cannot delete code document" unless @code_document.destroy
-    redirect_to :action => :index
-  end
-
-  def show
-    @code_document = CodeDocument.find(params[:id])
-    @parsed = parse_coderay(@code_document.code)
-  end
-
-  def parse_coderay(text)
-    text.scan(/(<code\:([a-z].+?)>(.+?)<\/code>)/m).each do |match|
-      text.gsub!(match[0],CodeRay.scan(match[2], match[1].to_sym).div( :line_numbers => :table,:css => :class))
-    end
-    text
-  end
-
-  def find
   end
 
   def get_user

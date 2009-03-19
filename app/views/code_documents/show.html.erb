@@ -1,6 +1,6 @@
 <% content_for :header_tags do %>
     <%= stylesheet_link_tag 'scm' %>
-    <%= stylesheet_link_tag 'codebook', :plugin => 'codebook' %>
+    <%= stylesheet_link_tag 'codebook', :plugin => "codebook" %>
 <% end %>
 
 <h2><%= @code_document.title %></h2>
@@ -31,15 +31,9 @@
     <% end %>
     </tbody>
   </table>
-<p><%= button_to "Edit", :controller => :codebook, :action => :edit, :id => @code_document %></p>
+<p><%= link_to "Edit", edit_code_document_path(@code_document) %></p>
 </div>
 
 <% content_for :sidebar do %>
-<h3>Codebook Menu</h3>
-<ul>
-  <li><%= link_to 'Codebook Dashboard', :controller => 'codebook', :action => 'index' %></li>
-  <li><%= link_to 'Add Code', :controller => 'codebook', :action => 'new' %></li>
-  <li><%= link_to 'Administration', :controller => 'codebook', :action => 'admin' %></li>
-</li>
-
+  <%= render :partial => 'codebook/menu' %>
 <% end %>
