@@ -5,12 +5,12 @@
   <%- if page_id.eql?("code_documents.index") -%>
     <li class="cb_active">Codebook Dashboard</li>
   <%- else -%>  
-    <li><%= link_to 'Codebook Dashboard', :controller => 'codebook', :action => 'index' %></li>
+    <li><%= link_to 'Codebook Dashboard', code_documents_path() %></li>
   <%- end -%>
   <%- if page_id.eql?("code_documents.new") -%>
     <li class="cb_active">Add Code</li>
   <%- else -%>
-    <li><%= link_to 'Add Code', new_code_document_path %></li>
+    <li><%= link_to 'Add Code', new_code_document_path() %></li>
   <%- end -%>
   <%- if page_id.eql?("codebook.admin") -%>
     <li class="cb_active">Administration</li>
