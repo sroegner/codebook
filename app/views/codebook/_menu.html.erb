@@ -18,3 +18,8 @@
     <li><%= link_to 'Administration', :controller => 'codebook', :action => 'admin' %></li>
   <%- end -%>  
 </ul>
+
+<% content_for :header_tags do %>
+    <%= stylesheet_link_tag 'scm' %>
+    <%= stylesheet_link_tag 'codebook', :plugin => "codebook" %>
+<% end %>

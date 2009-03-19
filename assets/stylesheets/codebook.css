@@ -1,2 +1,9 @@
-span.cb_label { font-weight: bolder; padding: 8px 0; }
-cb_active{ font-weight: bolder; padding: 8px 0; }
+span.cb_label { font-weight: bold; }
+ul#cb_menu { list-style:none; }
+li.cb_active{ 
+    font-weight: bolder; 
+    padding-left: 16px;
+    background: url(/plugin_assets/codebook/images/active.png) 3px 1px no-repeat;
+    background-position-x:left;
+    background-position-y:bottom; 
+}

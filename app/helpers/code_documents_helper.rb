@@ -6,7 +6,7 @@ module CodeDocumentsHelper
     l = lang.downcase
     all_languages = supported_languages
     if all_languages.include?(l)
-      return (CodeRay.scan code, l).html(:line_numbers => :inline)
+      return (CodeRay.scan code, l).html
     else
       return h(code)
     end

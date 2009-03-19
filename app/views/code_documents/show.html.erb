@@ -1,16 +1,11 @@
-<% content_for :header_tags do %>
-    <%= stylesheet_link_tag 'scm' %>
-    <%= stylesheet_link_tag 'codebook', :plugin => "codebook" %>
-<% end %>
-
 <h2><%= @code_document.title %></h2>
 
 <p id="document_meta">
-<span class="cb_label"><%= l(:codebook_form_label_author) %></span>
+<span class="cb_label"><%= l(:codebook_form_label_author) %>:</span>
 <%= @code_document.authorname %>
-<%= l(:codebook_form_label_lang)%>
+<span class="cb_label"><%= l(:codebook_form_label_lang)%>:</span>
 <%= @code_document.code_language.name %>
-<%= l(:codebook_form_label_desc)%>
+<span class="cb_label"><%= l(:codebook_form_label_area)%>:</span>
 <%= @code_document.code_area.name %>
 </p>
 
