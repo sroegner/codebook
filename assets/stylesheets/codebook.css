@@ -1,9 +1,9 @@
-span.cb_label { font-weight: bold; }
+span.cb_label, span.cb_label_left { font-weight: bold; margin: 0 12px;}
+span.cb_label_left{margin-left: 0;}
 ul#cb_menu { list-style:none; }
 li.cb_active{ 
-    font-weight: bolder; 
+    font-weight: bold; 
     padding-left: 16px;
-    background: url(/plugin_assets/codebook/images/active.png) 3px 1px no-repeat;
     background-position-x:left;
     background-position-y:bottom; 
 }

@@ -12,14 +12,16 @@
 
     <div class="box" id="new_language" style="float:left; padding:20px 30px; width: 300px;">
       <span class="cb_label"><%= l(:codebook_admin_label_language) %></span>
-      <% form_for :code_language, @language, 
-                  :url => { :action => "create_category" }, 
-                  :html => {:class => "nifty_form"} do |f| %>  
+
+      <% form_for :code_language, @language, :url => { :action => "create_category" } do |f| %>  
           <%= f.text_field :name, :size => 20 %>
           <%= submit_tag "Go!" %>
       <% end %> 
+
       <hr />
+
       <span class="cb_label"><%= l(:codebook_admin_label_available) %></span>
+
       <table style="width: 280px;">
       <thead>
         <tr><th>Language</th><th></th><th>Actions</th></tr>
@@ -29,22 +31,26 @@
         <%= render :partial => 'code_language', :collection => @languages, :locals => { :supported => renderable } %>
       </tbody>
       </table>
+      <br />
+      <p><span class="cb_remark">*</span> syntax highlighting is provided by <%= link_to "CodeRay", "http://coderay.rubychan.de" %></p>
     </div>
 
-    <div style="float: left; padding:20px; width: 40px;"></div>
+    <div style="float: left; width: 20px;">&nbsp;</div>
     
-    <div class="box" id="new_category" style="float: left; padding:20px 30px; width: 400px;">
-      <% form_for :code_area, @area, 
-                  :url => { :action => "create_category" }, 
-                  :html => {:class => "nifty_form"} do |f| %>  
-          <%= f.label l(:codebook_admin_label_area) %><br />
-          <%= f.text_field :name %>
+    <div class="box" id="new_category" style="float: left; padding:20px 30px; width: 300px;">
+      <% form_for :code_area, @area, :url => { :action => "create_category" } do |f| %>  
+          <%= f.text_field :name, :size => 20  %>
           <%= submit_tag "Go!" %>
       <% end %> 
-      <ul>
-      <% @areas.each do |l| %>
-        <li><%=h l.name %> (<%= link_to_if( l.has_no_documents?, "Delete", :action => "destroy_category", :area_id => l.id)%>)</li>
-      <% end %></ul>
+
+      <table style="width: 280px;">
+      <thead>
+        <tr><th>Area</th><th>Actions</th></tr>
+      </thead>
+      <tbody>
+        <%= render :partial => 'code_area', :collection => @areas %>
+      </tbody>
+      </table>
     </div>    
   </div>
 
