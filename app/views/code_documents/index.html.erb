@@ -5,6 +5,12 @@
       <h4><%= l(:codebook_index_label) %></h4>
       
       <div id="cb_index_sortoptions">
+
+  <%- form_tag(code_documents_path, :method => "get") do -%>
+    <%= select_tag(:language_id, options_for_select(@used_languages, @language_id||0))%>
+    <%= select_tag(:area_id, options_for_select(@used_areas))%>
+    <%= submit_tag("Filter") %> 
+  <%- end -%>
       </div>
       
       <table id="index_doc_table" class="list">
