@@ -10,7 +10,7 @@
       <%- end -%>
     </div>
 
-    <div class="box" id="new_language" style="float:left; padding:20px 30px; width: 300px;">
+    <div class="box adminbox" id="new_language">
       <span class="cb_label"><%= l(:codebook_admin_label_language) %></span>
 
       <% form_for :code_language, @language, :url => { :action => "create_category" } do |f| %>  
@@ -35,9 +35,7 @@
       <p><span class="cb_remark">*</span> syntax highlighting is provided by <%= link_to "CodeRay", "http://coderay.rubychan.de" %></p>
     </div>
 
-    <div style="float: left; width: 20px;">&nbsp;</div>
-    
-    <div class="box" id="new_category" style="float: left; padding:20px 30px; width: 300px;">
+    <div class="box adminbox" id="new_category">
       <% form_for :code_area, @area, :url => { :action => "create_category" } do |f| %>  
           <%= f.text_field :name, :size => 20  %>
           <%= submit_tag "Go!" %>
@@ -52,7 +50,18 @@
       </tbody>
       </table>
     </div>    
+
+    <div class="box adminbox" id="impex">
+      <span class="cb_label"><%= l(:codebook_admin_label_impex) %></span>
+      <hr />
+      <%= button_to "Export", :action => "export" %>
+      <%= l(:codebook_admin_label_export)%>
+      <hr />
+    </div>     
+
   </div>
+
+
 
 <% content_for :sidebar do %>
   <%= render :partial => 'codebook/menu' %>

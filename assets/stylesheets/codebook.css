@@ -1,10 +1,14 @@
 span.cb_label, span.cb_label_left { font-weight: bold; margin: 0 12px;}
+
 span.cb_label_left{margin-left: 0;}
-ul#cb_menu { list-style:none; }
+
+ul#cb_menu, ul#cb_search { list-style:none; margin: 0; padding: 0; border: 0;}
+
 li.cb_active{ 
     font-weight: bold; 
-    padding-left: 16px;
-    background-position-x:left;
-    background-position-y:bottom; 
+    font-style: italic;
 }
-span.cb_remark{color: #23a912;}
+
+span.cb_remark { color: #23a912; }
+
+div.adminbox { width: 320px; margin-right: 12px; float: left;}

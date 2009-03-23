@@ -6,10 +6,15 @@ class CodeDocumentsController < ApplicationController
   def index
     @code_documents = CodeDocument.find(:all)
   end
-  
 
   def new
     @code_document = CodeDocument.new()
+  end
+
+  def search
+    @srchterm = params[:searchterm]
+    @code_documents = CodeDocument.find(:all, :conditions => ['title like ?', @srchterm])
+    render :action => "index"
   end
 
   def create

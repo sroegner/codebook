@@ -1,21 +1,21 @@
-<h3>Codebook Menu</h3>
+<h3><%= l(:codebook_menu_title) %></h3>
   <% page_id = "#{controller.controller_name}.#{controller.action_name}" %>
 
 <ul id="cb_menu">
   <%- if page_id.eql?("code_documents.index") -%>
-    <li class="cb_active">Codebook Dashboard</li>
+    <li class="cb_active"><%= l(:codebook_menu_dashboard) %></li>
   <%- else -%>  
-    <li><%= link_to 'Codebook Dashboard', code_documents_path() %></li>
+    <li><%= link_to l(:codebook_menu_dashboard), code_documents_path() %></li>
   <%- end -%>
   <%- if page_id.eql?("code_documents.new") -%>
-    <li class="cb_active">Add Code</li>
+    <li class="cb_active"><%= l(:codebook_menu_add) %></li>
   <%- else -%>
-    <li><%= link_to 'Add Code', new_code_document_path() %></li>
+    <li><%= link_to l(:codebook_menu_add), new_code_document_path() %></li>
   <%- end -%>
   <%- if page_id.eql?("codebook.admin") -%>
-    <li class="cb_active">Administration</li>
+    <li class="cb_active"><%= l(:codebook_menu_admin) %></li>
   <%- else -%>
-    <li><%= link_to 'Administration', :controller => 'codebook', :action => 'admin' %></li>
+    <li><%= link_to l(:codebook_menu_admin), :controller => 'codebook', :action => 'admin' %></li>
   <%- end -%>  
 </ul>
 

@@ -1,5 +1,13 @@
 codebook_title: Share Code
+codebook_delete_confirm: Are you sure?
 codebook_index_title: Code Sharing Center
+codebook_index_label: Code Documents
+codebook_table_header_title: Title
+codebook_table_header_desc: Description
+codebook_table_header_author: Author
+codebook_table_header_lang: Language
+codebook_table_header_area: Area
+codebook_table_header_actions: Actions
 codebook_settings_label: Codebook Settings
 codebook_settings_text: here comes some text
 codebook_admin_title: Codebook Code Sharing Administration
@@ -7,6 +15,8 @@ codebook_admin_text: Add Languages or Categories here; you can delete all items 
 codebook_admin_label_language: Add a programming Language
 codebook_admin_label_available: Currently available Languages
 codebook_admin_label_area: Add a Category
+codebook_admin_label_impex: Import and Export
+codebook_admin_label_export: Will export all your languages, areas and code douments in one file
 codebook_form_label_title: Title
 codebook_form_label_area: Area
 codebook_form_label_author: Author
@@ -17,3 +27,7 @@ codebook_form_new_submit: Create
 codebook_form_edit_submit: Update
 codebook_form_new_title: Share some Code today!
 codebook_form_edit_title: Editing Document
+codebook_menu_title: Codebook Menu
+codebook_menu_dashboard: Codebook Dashboard
+codebook_menu_add: Add Code
+codebook_menu_admin: Administration

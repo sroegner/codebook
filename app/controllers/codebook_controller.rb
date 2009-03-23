@@ -42,6 +42,11 @@ class CodebookController < ApplicationController
     redirect_to :action => 'admin'
   end
 
+  def export
+    @code_documents = CodeDocument.find(:all)
+    render :yaml => @code_documents
+  end
+
   def get_user
     render_403 unless User.current.logged?
     
