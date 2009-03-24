@@ -4,16 +4,26 @@ class CodeDocumentsController < ApplicationController
   before_filter :get_user
   
   def index
-    @code_documents = CodeDocument.find(:all)
-    l = {}
+    all_code_documents = CodeDocument.find(:all)
+    @filter_area_id = params[:area_id].to_i || 0 
+    @filter_language_id = params[:language_id].to_i || 0
+
+    if(@filter_area_id > 0 or @filter_language_id > 0)
+      @code_documents = CodeDocument.find(:all, :conditions => ['language_id = ?', @filter_language_id]) if @filter_area_id == 0
+      @code_documents = CodeDocument.find(:all, :conditions => ['category_id = ?', @filter_area_id]) if @filter_language_id == 0
+      @code_documents = CodeDocument.find(:all, :conditions => ['language_id = ? and category_id = ?', @filter_language_id,@filter_area_id]) if @filter_language_id > 0 and @filter_area_id > 0 
+    else
+      @code_documents = all_code_documents
+    end
+    l = {} 
     a = {}
-    @code_documents.each do |cd|
+    all_code_documents.each do |cd|
       l.key?(cd.code_language.id)? l[cd.code_language.id] += 1 : l[cd.code_language.id] = 1
       a.key?(cd.code_area.id)? a[cd.code_area.id] += 1 : a[cd.code_area.id] = 1
     end
-    @used_languages = {"All (#{l.keys.size})" => 0} 
-    CodeLanguage.find(l.keys).collect{|cl| @used_languages["#{cl.name} (#{l[cl.id]})"] = cl.id}.sort
+    @used_languages = {"All (#{l.keys.size})" => 0}
     @used_areas = {"All (#{a.keys.size})" => 0}
+    CodeLanguage.find(l.keys).collect{|cl| @used_languages["#{cl.name} (#{l[cl.id]})"] = cl.id}.sort
     CodeArea.find(a.keys).collect{|ca| @used_areas["#{ca.name} (#{a[ca.id]})"]= ca.id}.sort
   end
 

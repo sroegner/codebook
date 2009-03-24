@@ -1,17 +1,18 @@
 <h2><%= l(:codebook_index_title) %></h2>
   
   <div id="dashboard">
-    <%- unless @code_documents.empty? -%>
       <h4><%= l(:codebook_index_label) %></h4>
       
       <div id="cb_index_sortoptions">
 
   <%- form_tag(code_documents_path, :method => "get") do -%>
-    <%= select_tag(:language_id, options_for_select(@used_languages, @language_id||0))%>
-    <%= select_tag(:area_id, options_for_select(@used_areas))%>
+    <%= select_tag(:language_id, options_for_select(@used_languages, @filter_language_id))%>
+    <%= select_tag(:area_id, options_for_select(@used_areas, @filter_area_id))%>
     <%= submit_tag("Filter") %> 
   <%- end -%>
       </div>
+<hr />
+    <%- unless @code_documents.empty? -%>
       
       <table id="index_doc_table" class="list">
         <tr>
