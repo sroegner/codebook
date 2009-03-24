@@ -2,6 +2,8 @@ codebook_title: Share Code
 codebook_delete_confirm: Are you sure?
 codebook_index_title: Code Sharing Center
 codebook_index_label: Code Documents
+codebook_index_label_lang: Language
+codebook_index_label_area: Area
 codebook_table_header_title: Title
 codebook_table_header_desc: Description
 codebook_table_header_author: Author
