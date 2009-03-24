@@ -1,6 +1,17 @@
 = codebook
 
+As the former user of a windows database program called cuecards, I was wondering if there shouldn't be a
+redmine plugin that does what I was using the program for (when I was still on Windows). The plugin uses the internal
+syntax highlighting of redmine and is best suited for keeping little snippets of code - and for sharing them with
+the members of your redmine instance.
+
 The codebook redmine plugin is my personal journey into the world of redMine and rails engines.
 You probably don't want to use it right now, as it is not complete.
 
+== Todo
+* Easier code download
+* Search Integration
+* Export and Import
+
 cheers
+Steffen
