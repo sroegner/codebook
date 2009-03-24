@@ -12,7 +12,7 @@
 <hr />
 <div class="box">
   
-  <p><%= @code_document.description %></p>
+  <p><%- @code_document.description.each_line do |line| -%><%= line %><br/><%- end -%></p>
 
   <table id="code_display" class="filecontent CodeRay">
   <tbody>
