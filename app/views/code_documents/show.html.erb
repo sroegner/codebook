@@ -7,19 +7,26 @@
 <%= @code_document.code_language.name %>
 <span class="cb_label"><%= l(:codebook_form_label_area)%>:</span>
 <%= @code_document.code_area.name %>
+
+&nbsp;&nbsp;&nbsp;
+
+<%- if @show_line_numbers.eql?('0') -%>
+  <%= link_to l(:codebook_form_link_showlinenumbers), code_document_path(:id => @code_document, :show_line_numbers => 1)%>
+<%- else -%>
+  <%= link_to l(:codebook_form_link_dontshowlinenumbers), code_document_path(:id => @code_document, :show_line_numbers => 0)%>
+<%- end -%>
+
 </p>
 
 <hr />
 <div class="box">
-  
   <p><%- @code_document.description.each_line do |line| -%><%= line %><br/><%- end -%></p>
-
   <table id="code_display" class="filecontent CodeRay">
   <tbody>
   <% line_num = 1 %>
-    <% code_highlight(@code_document.code_language.name, @code_document.code).each_line do |line| %>
+    <% code_highlight(@code_document.code_language.name.downcase, @code_document.code).each_line do |line| %>
       <tr>
-        <th class="line-num" id="L<%= line_num %>"><a href="#L<%= line_num %>"><%= line_num %></a></th>
+        <%-if (@show_line_numbers.eql?('0') == false) -%><th class="line-num" id="L<%= line_num %>"><a href="#L<%= line_num %>"><%= line_num %></a></th><%- end -%>
         <td class="line-code"><pre><%= line %></pre></td>
       </tr>
       <% line_num += 1 %>

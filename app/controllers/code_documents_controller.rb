@@ -70,6 +70,7 @@ class CodeDocumentsController < ApplicationController
 
   def show
     @code_document = CodeDocument.find(params[:id])
+    @show_line_numbers = params[:show_line_numbers] || '0'
   end
 
 private

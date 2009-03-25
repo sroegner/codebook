@@ -25,6 +25,8 @@ codebook_form_label_author: Author
 codebook_form_label_lang: Language
 codebook_form_label_desc: A brief description
 codebook_form_label_code: The source code
+codebook_form_link_showlinenumbers: Display line numbers
+codebook_form_link_dontshowlinenumbers: Don't display line numbers
 codebook_form_new_submit: Create
 codebook_form_edit_submit: Update
 codebook_form_new_title: Share some Code today!
