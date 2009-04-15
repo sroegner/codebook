@@ -1,5 +1,5 @@
         <tr class="<%= cycle('odd','even') %>"><td><%=h code_area.name %></td>
-        <td><%- if code_area.has_no_documents? -%>
+        <td><%- if code_area.code_document_ids.size == 0 -%>
               <%= link_to("Delete", :action => "destroy_category", :area_id => code_area.id)%>
             <%- end -%>
         </td></tr>

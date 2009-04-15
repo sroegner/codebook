@@ -1,15 +1,20 @@
 = codebook
 
-As the former user of a windows database program called cuecards, I was wondering if there shouldn't be a
-redmine plugin that does what I was using the program for (when I was still on Windows). The plugin uses the internal
-syntax highlighting of redmine and is best suited for keeping little snippets of code - and for sharing them with
-the members of your redmine instance.
+As the former user of a windows program called cuecards, I was wondering if there shouldn't be a
+redmine plugin that does what I was using the program for. The plugin uses the internal
+syntax highlighting of redmine and is meant for keeping little snippets of code - and for sharing them with
+the team members using your redmine instance.
 
 The codebook redmine plugin is my personal journey into the world of redMine and rails engines.
 You probably don't want to use it right now, as it is not complete.
 
+== Installation
+
+* in your redmine _vendor/plugins_ folder, git clone git://github.com/sroegner/redmine_codebook.git codebook
+* after that in the redmine root, rake db:migrate_plugins 
+
 == Todo
-* Easier code download
+* add a project view and bind certain code documents to a project
 * Search Integration
 * Export and Import
 

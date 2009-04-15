@@ -4,8 +4,8 @@ class CreateCodeDocuments < ActiveRecord::Migration
       t.string :title, :limit => 60
       t.text :description
       t.text :code
-      t.integer :category_id
-      t.integer :language_id
+      t.integer :code_area_id
+      t.integer :code_language_id
       t.integer :author_id
       t.timestamps
     end

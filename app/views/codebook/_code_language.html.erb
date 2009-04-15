@@ -1,6 +1,6 @@
         <tr class="<%= cycle('odd','even') %>"><td><%=h code_language.name %></td>
         <td><%- if supported.include?(code_language.name.downcase) -%><span class="cb_remark">*</span><%- end -%></td>
-        <td><%- if code_language.has_no_documents? -%>
+        <td><%- if code_language.code_document_ids.size == 0 -%>
               <%= link_to("Delete", :action => "destroy_category", :language_id => code_language.id)%>
             <%- end -%>
         </td></tr>

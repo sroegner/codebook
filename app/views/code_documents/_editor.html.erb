@@ -2,8 +2,8 @@
 
   <% form_for (@code_document) do |f| %>
     <p><span class="cb_label"><%= l(:codebook_form_label_title) %></span><%= f.text_field :title %>
-       <span class="cb_label"><%= l(:codebook_form_label_lang)%></span><%= collection_select(:code_document, :language_id, CodeLanguage.ordered, :id, :name) %>
-       <span class="cb_label"><%= l(:codebook_form_label_area)%></span><%= collection_select(:code_document, :category_id, CodeArea.ordered, :id, :name) %>
+       <span class="cb_label"><%= l(:codebook_form_label_lang)%></span><%= collection_select(:code_document, :code_language_id, CodeLanguage.ordered, :id, :name) %>
+       <span class="cb_label"><%= l(:codebook_form_label_area)%></span><%= collection_select(:code_document, :code_area_id, CodeArea.ordered, :id, :name) %>
     </p>
     <p><hr /></p>
     <p><span class="cb_label_left"><%= l(:codebook_form_label_desc)%></span><br/><%= f.text_area :description, :size => "120x2" %></p>

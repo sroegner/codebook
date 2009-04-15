@@ -1,7 +1,8 @@
 class CodeDocument < ActiveRecord::Base
   
-  belongs_to :code_area, :foreign_key => :category_id
-  belongs_to :code_language, :foreign_key => :language_id
+  belongs_to :code_area
+  belongs_to :code_language
+ 
   belongs_to :users, :foreign_key => :author_id
   
   validates_length_of :title, :maximum => 60
