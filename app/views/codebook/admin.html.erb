@@ -6,7 +6,7 @@
     <div id="set_defaults">
       <%- if @languages.empty? or @areas.empty? -%>
         You can add some default values here.
-        <%= button_to "Go", :controller => "codebook", :action => "add_default_enums" %>
+        <%= button_to l(:codebook_admin_label_add), :controller => "codebook", :action => "add_default_enums" %>
       <%- end -%>
     </div>
 
@@ -15,7 +15,7 @@
 
       <% form_for :code_language, @language, :url => { :action => "create_category" } do |f| %>  
           <%= f.text_field :name, :size => 20 %>
-          <%= submit_tag "Go!" %>
+          <%= submit_tag l(:codebook_admin_label_add) %>
       <% end %> 
 
       <hr />
@@ -24,7 +24,7 @@
 
       <table style="width: 280px;">
       <thead>
-        <tr><th>Language</th><th></th><th>Actions</th></tr>
+        <tr><th><%= l(:codebook_table_header_lang) %></th><th></th><th><%= l(:codebook_table_header_actions) %></th></tr>
       </thead>
       <tbody>
         <%- renderable = supported_languages() -%>
@@ -38,12 +38,12 @@
     <div class="box adminbox" id="new_category">
       <% form_for :code_area, @area, :url => { :action => "create_category" } do |f| %>  
           <%= f.text_field :name, :size => 20  %>
-          <%= submit_tag "Go!" %>
+          <%= submit_tag l(:codebook_admin_label_add) %>
       <% end %> 
 
       <table style="width: 280px;">
       <thead>
-        <tr><th>Area</th><th>Actions</th></tr>
+        <tr><th><%= l(:codebook_table_header_area) %></th><th><%= l(:codebook_table_header_actions) %></th></tr>
       </thead>
       <tbody>
         <%= render :partial => 'code_area', :collection => @areas %>

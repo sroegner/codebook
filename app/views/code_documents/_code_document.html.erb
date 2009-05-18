@@ -5,6 +5,6 @@
   <td id="cd_author"><%= truncate(code_document.authorname) %></td>
   <td id="cd_lang"><%= h code_document.code_language.name %></td>
   <td id="cd_area"><%= h code_document.code_area.name %></td>
-  <td id="cd_actions"><%= link_to "Edit", edit_code_document_path(code_document) %>&nbsp;
-                      <%= link_to "Delete", code_document_path(code_document), :confirm => l(:codebook_delete_confirm), :method => :delete %></td>
+  <td id="cd_actions"><%= link_to l(:codebook_index_label_edit), edit_code_document_path(code_document) %>&nbsp;
+                      <%= link_to l(:codebook_index_label_delete), code_document_path(code_document), :confirm => l(:codebook_delete_confirm), :method => :delete %></td>
 </tr>

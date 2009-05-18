@@ -10,7 +10,7 @@
     <%= select_tag(:language_id, options_for_select(@used_languages, @filter_language_id))%>
     <%= label_tag l(:codebook_index_label_area) %>
     <%= select_tag(:area_id, options_for_select(@used_areas, @filter_area_id))%>
-    <%= submit_tag("Filter") %> 
+    <%= submit_tag(l(:codebook_form_filter_submit)) %> 
   <%- end -%>
       </div>
 <hr />
