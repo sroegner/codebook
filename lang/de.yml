@@ -1,0 +1,41 @@
+codebook_title: Quellcode ablegen
+codebook_delete_confirm: Sind Sie sicher?
+codebook_index_title: Code Sharing Center
+codebook_index_label: Code Documents
+codebook_index_label_lang: Programmiersprache
+codebook_index_label_area: Bereich
+codebook_index_label_edit: Bearbeiten
+codebook_index_label_delete: Entfernen
+codebook_table_header_title: Titel
+codebook_table_header_desc: Beschreibung
+codebook_table_header_author: Autor
+codebook_table_header_lang: Programmiersprache
+codebook_table_header_area:  Bereich
+codebook_table_header_actions: Actions
+codebook_settings_label: Codebook Einstellungen
+codebook_settings_text: irgendwelcher text
+codebook_admin_title: Codebook Verwaltung
+codebook_admin_text: Hier koennen Programmiersprachen und Kategorien verwaltet werden; eine Sprache oder Kategorie kann nur geloescht werden wenn keine Eintraege auf diese verweisen.
+codebook_admin_label_language: Eine Programmiersprache hinzufuegen
+codebook_admin_label_available: Verfuegbare Programmiersprachen
+codebook_admin_label_area: Kategorien hinzufuegen
+codebook_admin_label_impex: Import und Export
+codebook_admin_label_export: Will export all your languages, areas and code douments in one file
+codebook_admin_label_add: Los!
+codebook_form_label_title: Titel
+codebook_form_label_area: Bereich
+codebook_form_label_author: Autor
+codebook_form_label_lang: Programmiersprache
+codebook_form_label_desc: Kurzbeschreibung
+codebook_form_label_code: Der Quellcode
+codebook_form_link_showlinenumbers: Zeilennummern anzeigen
+codebook_form_link_dontshowlinenumbers: Zeilennummern nicht anzeigen
+codebook_form_new_submit: Anlegen
+codebook_form_edit_submit: Aendern
+codebook_form_filter_submit: Filter
+codebook_form_new_title: Quellcode fuer alle!
+codebook_form_edit_title: Ein Quellcode Dokument bearbeiten
+codebook_menu_title: Codebook Menue
+codebook_menu_dashboard: Codebook Dashboard
+codebook_menu_add: Code hinzufuegen
+codebook_menu_admin: Verwaltung
