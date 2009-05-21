@@ -21,8 +21,8 @@ class CodeDocumentsController < ApplicationController
       l.key?(cd.code_language.id)? l[cd.code_language.id] += 1 : l[cd.code_language.id] = 1
       a.key?(cd.code_area.id)? a[cd.code_area.id] += 1 : a[cd.code_area.id] = 1
     end
-    @used_languages = {"All (#{l.keys.size})" => 0}
-    @used_areas = {"All (#{a.keys.size})" => 0}
+    @used_languages = {l("codebook_form_label_all") + " (#{l.keys.size})" => 0}
+    @used_areas = {l("codebook_form_label_all") + " (#{a.keys.size})" => 0}
     CodeLanguage.find(l.keys).collect{|cl| @used_languages["#{cl.name} (#{l[cl.id]})"] = cl.id}.sort
     CodeArea.find(a.keys).collect{|ca| @used_areas["#{ca.name} (#{a[ca.id]})"]= ca.id}.sort
   end

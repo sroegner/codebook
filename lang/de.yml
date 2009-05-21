@@ -1,4 +1,4 @@
-codebook_title: Quellcode ablegen
+codebook_title: Quellcode Datenbank
 codebook_delete_confirm: Sind Sie sicher?
 codebook_index_title: Code Sharing Center
 codebook_index_label: Code Documents
@@ -28,8 +28,9 @@ codebook_form_label_author: Autor
 codebook_form_label_lang: Programmiersprache
 codebook_form_label_desc: Kurzbeschreibung
 codebook_form_label_code: Der Quellcode
+codebook_form_label_all: Alle
 codebook_form_link_showlinenumbers: Zeilennummern anzeigen
-codebook_form_link_dontshowlinenumbers: Zeilennummern nicht anzeigen
+codebook_form_link_dontshowlinenumbers: Zeilennummern verbergen
 codebook_form_new_submit: Anlegen
 codebook_form_edit_submit: Aendern
 codebook_form_filter_submit: Filter
