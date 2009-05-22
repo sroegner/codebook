@@ -5,7 +5,7 @@
 
     <div id="set_defaults">
       <%- if @languages.empty? or @areas.empty? -%>
-        You can add some default values here.
+        <%= l(:codebook_admin_label_adddefaultvalues) %>
         <%= button_to l(:codebook_admin_label_add), :controller => "codebook", :action => "add_default_enums" %>
       <%- end -%>
     </div>

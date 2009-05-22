@@ -22,6 +22,7 @@ codebook_admin_label_area: Add a Category
 codebook_admin_label_impex: Import and Export
 codebook_admin_label_export: Will export all your languages, areas and code douments in one file
 codebook_admin_label_add: Go!
+codebook_admin_label_adddefaultvalues: You can add some default values here.
 codebook_form_label_title: Title
 codebook_form_label_area: Area
 codebook_form_label_author: Author

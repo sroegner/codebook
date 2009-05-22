@@ -22,6 +22,7 @@ codebook_admin_label_area: カテゴリを追加
 codebook_admin_label_impex: インポートおよびエクスポート
 codebook_admin_label_export: すべての言語、カテゴリおよびコード・ドキュメントを1つのファイルにエクスポートします
 codebook_admin_label_add: 追加
+codebook_admin_label_adddefaultvalues: デフォルトの選択肢をいくつか追加したい場合はこのボタンを押してください。
 codebook_form_label_title: タイトル
 codebook_form_label_area: カテゴリ
 codebook_form_label_author: 作成者
