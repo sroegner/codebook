@@ -22,7 +22,7 @@ codebook_admin_label_area: Kategorien hinzufuegen
 codebook_admin_label_impex: Import und Export
 codebook_admin_label_export: Will export all your languages, areas and code douments in one file
 codebook_admin_label_add: Los!
-codebook_admin_label_adddefaultvalues: You can add some default values here.
+codebook_admin_label_adddefaultvalues: Ihre Datenabank ist noch leer - hier koennen einige Sprachen und Kategorien eingefuegt werden
 codebook_form_label_title: Titel
 codebook_form_label_area: Bereich
 codebook_form_label_author: Autor
