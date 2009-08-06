@@ -13,7 +13,12 @@ Redmine::Plugin.register :redmine_codebook do
   author 'Steffen Roegner'
   author_url 'http://www.sroegner.org'
   description 'This is a source code sharing plugin for Redmine'
-  version '0.1.0'
+  version '0.1.1'
   requires_redmine :version_or_higher => '0.8.2'
+
+  settings(:partial => 'preferences/codebook_prefs',
+           :default => {
+             'show_line_numbers' => '0'
+           })
   menu(:top_menu, :codebook, {:controller => "codebook", :action => 'index'}, :caption => :codebook_title, :if => Proc.new{ User.current.logged? })
 end

@@ -41,3 +41,6 @@ codebook_menu_title: Codebook Menu
 codebook_menu_dashboard: Codebook Dashboard
 codebook_menu_add: Add Code
 codebook_menu_admin: Administration
+codebook_plugin_view_preferences: View Preferences
+codebook_show_line_numbers: Display line numbers
+
