@@ -20,5 +20,10 @@ You probably don't want to use it right now, as it is not complete.
 * add a project view and bind certain code documents to a project
 * Search Integration (seems to be currently unsupported by redmine)
 
+== History
+
+* 0.1.1 added settings panel to make the "display line numbers" setting a persistent option
+* 0.1.0 initial release
+
 cheers
 Steffen
