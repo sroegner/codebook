@@ -1,0 +1,45 @@
+hu:
+  codebook_title: Kód megosztása
+  codebook_delete_confirm: Biztos vagy benne?
+  codebook_index_title: Kódmegosztó központ
+  codebook_index_label: Kódok
+  codebook_index_label_lang: Programnyelv
+  codebook_index_label_area: Terület
+  codebook_index_label_edit: Szerkeszt
+  codebook_index_label_delete: Törlés
+  codebook_table_header_title: Cím
+  codebook_table_header_desc: Leírás
+  codebook_table_header_author: Szerző
+  codebook_table_header_lang: Nyelv
+  codebook_table_header_area: Terület
+  codebook_table_header_actions: Műveletek
+  codebook_settings_label: Beállítások
+  codebook_settings_text: Ide jön némi szöveg
+  codebook_admin_title: Adminisztráció
+  codebook_admin_text: Itt tudsz új nyelveket, kategóriákat hozzáadni; az üres elemeket itt tudod törölni
+  codebook_admin_label_language: Új programnyelv hozzáadása
+  codebook_admin_label_available: Eddig felvett nyelvek
+  codebook_admin_label_area: Új kategória hozzáadása
+  codebook_admin_label_impex: Import és export
+  codebook_admin_label_export: Az összes adatot kimenti egyetlen fájlba
+  codebook_admin_label_add: OK
+  codebook_admin_label_adddefaultvalues: Itt hozzáadhatsz néhány alapértelmezett értéket.
+  codebook_form_label_title: Cím
+  codebook_form_label_area: Terület
+  codebook_form_label_author: Szerző
+  codebook_form_label_lang: Nyelv
+  codebook_form_label_desc: Rövid leírás
+  codebook_form_label_code: A forráskód
+  codebook_form_label_all: Mind
+  codebook_form_link_showlinenumbers: Sorszámok megjelenítése
+  codebook_form_link_dontshowlinenumbers: Ne mutassa a sorszámokat
+  codebook_form_new_submit: Létrehoz
+  codebook_form_edit_submit: Frissít
+  codebook_form_filter_submit: Szűrés
+  codebook_form_new_title: Ossz meg egy jó kis kódot!
+  codebook_form_edit_title: Dokumentum szerkesztése
+  codebook_menu_title: Menü
+  codebook_menu_dashboard: Megosztott kódok
+  codebook_menu_add: Új kód
+  codebook_menu_admin: Adminisztráció
+
