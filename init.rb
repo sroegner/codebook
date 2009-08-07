@@ -8,13 +8,13 @@ Dir[File.join(directory,'vendor','plugins','*')].each do |dir|
   Dependencies.load_once_paths.delete(path)
 end
 
-Redmine::Plugin.register :redmine_codebook do
+Redmine::Plugin.register :codebook do
   name 'Redmine Codebook plugin'
   author 'Steffen Roegner'
   author_url 'http://www.sroegner.org'
   description 'This is a source code sharing plugin for Redmine'
-  version '0.1.1'
-  requires_redmine :version_or_higher => '0.8.2'
+  version '0.2.0'
+  requires_redmine :version_or_higher => '0.8.4'
 
   settings(:partial => 'preferences/codebook_prefs',
            :default => {
