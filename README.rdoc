@@ -22,6 +22,7 @@ You probably don't want to use it right now, as it is not complete.
 
 == History
 
+* 0.2.0 changed (internal) plugin name and added localization files to make rails i18n work
 * 0.1.1 added settings panel to make the "display line numbers" setting a persistent option
 * 0.1.0 initial release
 
