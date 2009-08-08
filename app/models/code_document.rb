@@ -23,7 +23,7 @@ class CodeDocument < ActiveRecord::Base
 
   # the defaut here is not to show line numbers
   def CodeDocument.show_line_numbers?
-    Setting.plugin_redmine_codebook['show_line_numbers'] || 0
+    Setting.plugin_codebook['show_line_numbers'] || 0
   end
 
 end
