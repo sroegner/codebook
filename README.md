@@ -1,26 +1,27 @@
-= codebook
+# codebook
 
-As the former user of a windows program called cuecards, I wanted a
-redmine plugin that does what I was using the program for (sharing your gems of knowledge was not an easy thing
-to do with cuecards). The plugin uses the internal syntax highlighting of redmine and is meant for keeping little 
-snippets of code - and for sharing them with the team members using your redmine instance.
+This plugin is a minimalistic shared knowledge database for teams using redmine.
+It uses the internal syntax highlighting of redmine and is primarily designed for keeping and sharing small 
+pieces of code or documentation.
 
 The codebook redmine plugin is my personal journey into the world of redmine and rails engines.
-You probably don't want to use it right now, as it is not complete.
+Please let me know about any ideas or problems you encounter while using it.
 
-== Installation
+## Installation
 
-* in your redmine _vendor/plugins_ folder, git clone git://github.com/sroegner/redmine_codebook.git codebook
+* in your redmine **vendor/plugins** folder, 
+** _git clone git://github.com/sroegner/redmine_codebook.git codebook_
+** The name of the folder you clone into is important for the plugin to work!
 * after that in the redmine root, rake db:migrate_plugins 
 * right after installation, the Administration view offers a button to quickly put in some languages and categories
 
-== Todo
+## Todo
 
 * Export and Import
 * add a project view and bind certain code documents to a project
 * Search Integration (seems to be currently unsupported by redmine)
 
-== History
+## History
 
 * 0.2.0 changed (internal) plugin name and added localization files to make rails i18n work
 * 0.1.1 added settings panel to make the "display line numbers" setting a persistent option
