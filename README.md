@@ -10,8 +10,8 @@ Please let me know about any ideas or problems you encounter while using it.
 ## Installation
 
 * in your redmine **vendor/plugins** folder, 
-    * _git clone git://github.com/sroegner/redmine_codebook.git codebook_
-    * The name of the folder you clone into is important for the plugin to work!
+** _git clone git://github.com/sroegner/redmine_codebook.git codebook_
+** The name of the folder you clone into is important for the plugin to work!
 * after that in the redmine root, rake db:migrate_plugins 
 * right after installation, the Administration view offers a button to quickly put in some languages and categories
 
