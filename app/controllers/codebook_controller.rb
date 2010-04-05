@@ -58,7 +58,7 @@ class CodebookController < ApplicationController
   end
   
   def add_default_enums
-    langs = ["Java", "Ruby", "Python", "C", "C++", "Ant", "Bash", "Sql", "Pl/Sql"]
+    langs = ["Java", "Ruby", "Python", "Php", "Html", "Rhtml", "Css", "Java_script", "Xml", "C", "C++", "Ant", "Bash", "Sql", "Pl/Sql"]
     areas = ["Web", "Database", "Unittest", "Windows", "Linux", "Misc"]
 
     if CodeLanguage.find(:all).size == 0
@@ -78,3 +78,4 @@ class CodebookController < ApplicationController
   end
 
 end
+
