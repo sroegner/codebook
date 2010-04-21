@@ -6,13 +6,9 @@ Dir[File.expand_path(File.dirname(__FILE__)) + "/lib/tasks/**/*.rake"].sort.each
 RedminePluginSupport::Base.setup do |plugin|
   plugin.project_name = 'codebook'
   plugin.default_task = [:spec, :features]
-#  plugin.default_task = [:features]
-#  plugin.tasks = [:doc, :release, :clean, :test, :db, :spec]
-  plugin.tasks = [:doc, :release, :clean, :test, :db]
-  # TODO: gem not getting this automaticly
+  plugin.tasks = [:doc, :release, :clean, :test, :db, :spec]
   plugin.redmine_root = File.expand_path(File.dirname(__FILE__) + '/../../../')
 end
-
 
 begin
   require 'jeweler'
