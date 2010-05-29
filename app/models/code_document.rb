@@ -5,7 +5,9 @@ class CodeDocument < ActiveRecord::Base
  
   belongs_to :users, :foreign_key => :author_id
   
-  validates_length_of :title, :maximum => 60
+  validates_length_of :title, :in => 1..60
+  validates_uniqueness_of :title
+  validates_presence_of :author_id, :code_area_id, :code_language_id
 
   # See http://www.redmine.org/issues/3021
   # the redmine search can not be used by plugins yet
