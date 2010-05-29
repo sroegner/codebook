@@ -13,7 +13,7 @@ Redmine::Plugin.register :codebook do
   author 'Steffen Roegner'
   author_url 'http://www.sroegner.org'
   description 'This is a source code sharing plugin for Redmine'
-  version '0.2.0'
+  version '0.2.1'
   requires_redmine :version_or_higher => '0.8.1'
 
   settings(:partial => 'preferences/codebook_prefs',

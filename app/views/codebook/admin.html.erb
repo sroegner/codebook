@@ -1,14 +1,8 @@
 <h2><%= l(:codebook_admin_title) %></h2>
 
 <h4><%= l(:codebook_admin_text) %></h4>
-  <div id="dashboard">
 
-    <div id="set_defaults">
-      <%- if @languages.empty? or @areas.empty? -%>
-        <%= l(:codebook_admin_label_adddefaultvalues) %>
-        <%= button_to l(:codebook_admin_label_add), :controller => "codebook", :action => "add_default_enums" %>
-      <%- end -%>
-    </div>
+  <div id="dashboard" class="topmargin">
 
     <div class="box adminbox" id="new_language">
       <span class="cb_label"><%= l(:codebook_admin_label_language) %></span>
@@ -36,11 +30,13 @@
     </div>
 
     <div class="box adminbox" id="new_category">
+      <span class="cb_label"><%= l(:codebook_admin_label_area) %></span>
+      <br/>
       <% form_for :code_area, @area, :url => { :action => "create_category" } do |f| %>  
           <%= f.text_field :name, :size => 20  %>
           <%= submit_tag l(:codebook_admin_label_add) %>
       <% end %> 
-
+      <hr/>
       <table style="width: 280px;">
       <thead>
         <tr><th><%= l(:codebook_table_header_area) %></th><th><%= l(:codebook_table_header_actions) %></th></tr>

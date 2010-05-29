@@ -44,7 +44,7 @@ class CodebookController < ApplicationController
 
   def export
     @code_documents = CodeDocument.find(:all)
-    render :yaml => @code_documents
+    render :text => @code_documents.to_yaml, :content_type => 'text/yaml'
   end
 
   def get_user
@@ -57,24 +57,4 @@ class CodebookController < ApplicationController
     end
   end
   
-  def add_default_enums
-    langs = ["Java", "Ruby", "Python", "C", "C++", "Ant", "Bash", "Sql", "Pl/Sql"]
-    areas = ["Web", "Database", "Unittest", "Windows", "Linux", "Misc"]
-
-    if CodeLanguage.find(:all).size == 0
-      langs.each do |l| 
-        new_l = CodeLanguage.create(:name => l)
-        new_l.save
-      end
-    end
-
-    if CodeArea.find(:all).size == 0
-      areas.each do |a| 
-        new_a = CodeArea.create(:name => a)
-        new_a.save
-      end
-    end
-    redirect_to :action => 'admin'
-  end
-
 end

@@ -11,7 +11,7 @@ Please let me know about any ideas or problems you encounter while using it.
 
 * in your redmine **vendor/plugins** folder, 
     * _git clone git://github.com/sroegner/codebook.git_
-* after that in the redmine root, _rake db:migrate_plugins_
+* after that in the redmine root, _rake db:migrate:plugins_
 * right after installation, the Administration view offers a button to quickly put in some languages and categories
 
 ## Todo
@@ -22,7 +22,8 @@ Please let me know about any ideas or problems you encounter while using it.
 
 ## History
 
-* 0.2.0 changed (internal) plugin name and added localization files to make rails i18n work
+* 0.2.1 moved category initialization into migration, no more extra "add default data" option
+* 0.2.0 changed plugin name and added localization files to make rails i18n work
 * 0.1.1 added settings panel to make the "display line numbers" setting a persistent option
 * 0.1.0 initial release
 
