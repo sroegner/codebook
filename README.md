@@ -7,12 +7,18 @@ pieces of code or documentation.
 The codebook redmine plugin is my personal journey into the world of redmine and rails engines.
 Please let me know about any ideas or problems you encounter while using it.
 
+---
+
+***Achtung***
+
+The current version of codebook is incompatible with Redmine 1.0 and newer versions of CodeRay (0.9+).
+I am working on a 0.3 release that I will try to finish around Aug 8th.
+
 ## Installation
 
 * in your redmine **vendor/plugins** folder, 
     * _git clone git://github.com/sroegner/codebook.git_
 * after that in the redmine root, _rake db:migrate:plugins_
-* right after installation, the Administration view offers a button to quickly put in some languages and categories
 
 ## Todo
 
