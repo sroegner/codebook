@@ -1,12 +1,13 @@
 module CodeDocumentsHelper
 
   require 'coderay'
-
+  require 'coderay/helpers/file_type'
+  
   def code_highlight(lang, code)
     l = lang.downcase
     all_languages = supported_languages
     if all_languages.include?(l)
-      return (CodeRay.scan code, l).html
+      return (CodeRay.scan code, l).div
     else
       return h(code)
     end
@@ -18,3 +19,4 @@ module CodeDocumentsHelper
   end
 
 end
+
