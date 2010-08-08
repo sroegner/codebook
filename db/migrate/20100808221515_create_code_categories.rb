@@ -6,8 +6,8 @@ class CreateCodeCategories < ActiveRecord::Migration
     end
 
     # not particularly good style, but good enough for now
-    langs = ["Java", "Ruby", "Python", "C", "C++", "Ant", "Bash", "Sql", "HTML", "CSS", "Pl/Sql"]
-    areas = ["Web", "Database", "Unittest", "Windows", "Linux", "MacOSX", "Misc"]
+    langs = ["Java", "Javascript", "Yaml", "Ruby", "Python", "C", "C++", "Ant", "Bash", "Sql", "HTML", "CSS", "Pl/Sql", "Xml"]
+    areas = ["Web", "Database", "Unittest", "Windows", "Linux", "MacOSX", "Redmine", "Misc"]
     langs.sort.each { |l| CodeLanguage.create(:name => l) }
     areas.sort.each { |a| CodeArea.create(:name => a) }
   end

@@ -28,6 +28,7 @@ If, you want to use codebook with pre-1.0.0 versions of Redmine, please download
 
 ## History
 
+* 0.3.1 fixed syntax highlighting for ant and pl/sql, cleaned up migrations
 * 0.3.0 works with Redmine 1.0.0, added cucumber and rspec tests
 * 0.2.1 moved category initialization into migration, no more extra "add default data" option
 * 0.2.0 changed plugin name and added localization files to make rails i18n work
