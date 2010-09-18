@@ -1,0 +1,46 @@
+codebook_title: Codebook
+codebook_delete_confirm: Är du säker?
+codebook_index_title: Koddelningscenter
+codebook_index_label: Koddokument
+codebook_index_label_lang: Språk
+codebook_index_label_area: Area
+codebook_index_label_edit: Editera
+codebook_index_label_delete: Ta bort
+codebook_table_header_title: Titel
+codebook_table_header_desc: Beskrivning
+codebook_table_header_author: Skapare
+codebook_table_header_lang: Språk
+codebook_table_header_area: Area
+codebook_table_header_actions: Åtgärder
+codebook_settings_label: Codebookinställningar
+codebook_settings_text: Lite innehåll
+codebook_admin_title: Codebook Code Sharing Administration
+codebook_admin_text: Add Languages or Categories here; you can delete all items that have no code document assigned to them
+codebook_admin_label_language: Lägg till programmeringspråk
+codebook_admin_label_available: Currently available Languages
+codebook_admin_label_area: Lägg till kategori
+codebook_admin_label_impex: Import och Export
+codebook_admin_label_export: Will export all your languages, areas and code douments in one file
+codebook_admin_label_add: Gå!
+codebook_admin_label_adddefaultvalues: You can add some default values here.
+codebook_form_label_title: Titel
+codebook_form_label_area: Area
+codebook_form_label_author: Skapare
+codebook_form_label_lang: Språk
+codebook_form_label_desc: En kort beskrivning
+codebook_form_label_code: Källkod
+codebook_form_label_all: Allt
+codebook_form_link_showlinenumbers: Visa radnummer
+codebook_form_link_dontshowlinenumbers: Visa inte radnummer
+codebook_form_new_submit: Skapa
+codebook_form_edit_submit: Uppdatera
+codebook_form_filter_submit: Filtrera
+codebook_form_new_title: Dela kod idag!
+codebook_form_edit_title: Ändrar dokument
+codebook_menu_title: Codebookmeny
+codebook_menu_dashboard: Codebook Dashboard
+codebook_menu_add: Lägg till kod
+codebook_menu_admin: Administration
+codebook_plugin_view_preferences: Visa inställningar
+codebook_show_line_numbers: Visa radnummer
+
