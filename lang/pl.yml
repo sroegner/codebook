@@ -1,0 +1,45 @@
+codebook_title: Codebook
+codebook_delete_confirm: Jesteś pewien?
+codebook_index_title: Code Sharing Center
+codebook_index_label: Kody źródłowe
+codebook_index_label_lang: Język
+codebook_index_label_area: Dziedzina
+codebook_index_label_edit: Edytuj
+codebook_index_label_delete: Usuń
+codebook_table_header_title: Tytuł
+codebook_table_header_desc: Opis
+codebook_table_header_author: Autor
+codebook_table_header_lang: Język
+codebook_table_header_area: Dziedzina
+codebook_table_header_actions: Akcje
+codebook_settings_label: Ustawienia Codebook
+codebook_settings_text: Wpisz tekst.
+codebook_admin_title: Administracja Codebook
+codebook_admin_text: Dodaj język lub kategorię; Możesz usunąć wszystkie wpisy, które nie mają powiązania z innymi.
+codebook_admin_label_language: Dodaj język programistyczny
+codebook_admin_label_available: Aktualnie dostępne języki
+codebook_admin_label_area: Dodaj kategorię
+codebook_admin_label_impex: Import & Export
+codebook_admin_label_export: Wyekportuje wszystkie twoje języki, i kody źródłowe od jednego pliku.
+codebook_admin_label_add: Go!
+codebook_admin_label_adddefaultvalues: Możesz tutaj dodać standardowe wartości.
+codebook_form_label_title: Tytuł
+codebook_form_label_area: Area
+codebook_form_label_author: Autor
+codebook_form_label_lang: Język
+codebook_form_label_desc: Krótki opis
+codebook_form_label_code: Kod źródłowy
+codebook_form_label_all: Wszystko
+codebook_form_link_showlinenumbers: Wyświetl numerację wierszy.
+codebook_form_link_dontshowlinenumbers: Nie wyświetlaj numeracji wierszy.
+codebook_form_new_submit: Utwórz
+codebook_form_edit_submit: Aktualizuj
+codebook_form_filter_submit: Filtr
+codebook_form_new_title: Podziel się kodem!
+codebook_form_edit_title: Edytowanie dokumentu
+codebook_menu_title: Codebook Menu
+codebook_menu_dashboard: Codebook Dashboard
+codebook_menu_add: Dodaj kod
+codebook_menu_admin: Administracja
+codebook_plugin_view_preferences: Zobacz ustawienia
+codebook_show_line_numbers: Wyświetl numerację wierszy
