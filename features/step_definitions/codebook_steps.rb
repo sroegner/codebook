@@ -1,17 +1,12 @@
-Before do
-  User.destroy_all
-  # Setting.stubs(:plugin_codebook).returns({'show_line_numbers' => 1})
-  @current_user = Factory(:user)
-  @p = path_to('the plugin home page')
-end
-
-
 Given /^I am an anonymous user$/ do
   visit signout_path
 end
 
 Given /^I am logged in$/ do
-  User.stubs(:current).returns(@current_user)
+  @user = Factory(:user)
+  @user.register!
+  @user.activate!
+  User.stubs(:current).returns(@user)  
 end
 
 Then /^I should not see the link to Codebook$/ do

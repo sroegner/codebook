@@ -1,4 +1,5 @@
 .project
 .tmp*
 .idea
+.redcar
 pkg

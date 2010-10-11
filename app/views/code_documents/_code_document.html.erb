@@ -1,10 +1,10 @@
 
 <tr class="<%= cycle('odd','even') %>">
-  <td id="cd_title"><%= link_to h(code_document.title), code_document_path(code_document) %></td>
-  <td id="cd_desc"><%= truncate(code_document.description) %></td>
-  <td id="cd_author"><%= truncate(code_document.authorname) %></td>
-  <td id="cd_lang"><%= h code_document.code_language.name %></td>
-  <td id="cd_area"><%= h code_document.code_area.name %></td>
-  <td id="cd_actions"><%= link_to l(:codebook_index_label_edit), edit_code_document_path(code_document) %>&nbsp;
+  <td id="cd_title_<%= h code_document.id %>"><%= link_to h(code_document.title), code_document_path(code_document) %></td>
+  <td id="cd_desc_<%= h code_document.id %>"><%= truncate(code_document.description) %></td>
+  <td id="cd_author_<%= h code_document.id %>" class="centered"><%= truncate(code_document.authorname) %></td>
+  <td id="cd_lang_<%= h code_document.id %>" class="centered"><%= h code_document.code_language.name %></td>
+  <td id="cd_area_<%= h code_document.id %>" class="centered"><%= h code_document.code_area.name %></td>
+  <td id="cd_actions_<%= h code_document.id %>" class="centered"><%= link_to l(:codebook_index_label_edit), edit_code_document_path(code_document) %>&nbsp;
                       <%= link_to l(:codebook_index_label_delete), code_document_path(code_document), :confirm => l(:codebook_delete_confirm), :method => :delete %></td>
 </tr>
