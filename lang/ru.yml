@@ -1,45 +1,45 @@
-codebook_title: Поделиться кодом
-codebook_delete_confirm: Вы уверены
-codebook_index_title: Центр обмена кодом
-codebook_index_label: Документация кода
-codebook_index_label_lang: Язык
-codebook_index_label_area: Область
-codebook_index_label_edit: Редактировать
-codebook_index_label_delete: Удалить
-codebook_table_header_title: Название
-codebook_table_header_desc: Описание
-codebook_table_header_author: Автор
-codebook_table_header_lang: Язык
-codebook_table_header_area: Область
-codebook_table_header_actions: Действия
-codebook_settings_label: Настройки Codebook
-codebook_settings_text: здесь какой-то текст
-codebook_admin_title: Администрирование обмена кодом в Codebook
-codebook_admin_text: Добавить языки или категрии здесь; вы можете удалить все элементы, у которых нет документов с исходным кодом
-codebook_admin_label_language: Добавить язык программирования
-codebook_admin_label_available: Доступные языки программирования
-codebook_admin_label_area: Добавить категорию
-codebook_admin_label_impex: Импорт и экспорт
-codebook_admin_label_export: Экспорт всех ваших языков, областей и документов в один файл
-codebook_admin_label_add: Вперед!
-codebook_admin_label_adddefaultvalues: Вы можете добавить здесь какие-то значения по умолчанию.
-codebook_form_label_title: Название
-codebook_form_label_area: Область
-codebook_form_label_author: Автор
-codebook_form_label_lang: Язык
-codebook_form_label_desc: Краткое описание
-codebook_form_label_code: Исходный код
-codebook_form_label_all: Все
-codebook_form_link_showlinenumbers: Отобразить номера строк
-codebook_form_link_dontshowlinenumbers: Скрыть номера строк
-codebook_form_new_submit: Создать
-codebook_form_edit_submit: Обновить
-codebook_form_filter_submit: Фильтровать
-codebook_form_new_title: Поделись исходным кодом!
-codebook_form_edit_title: Редактировать документ
-codebook_menu_title: Codebook меню
-codebook_menu_dashboard: Панель Codebook
-codebook_menu_add: Добавить код
-codebook_menu_admin: Администрирование
-codebook_plugin_view_preferences: Открыть настройки
-codebook_show_line_numbers: Отобразить номера строкк
+codebook_title: РџРѕРґРµР»РёС‚СЊСЃСЏ РєРѕРґРѕРј
+codebook_delete_confirm: Р’С‹ СѓРІРµСЂРµРЅС‹
+codebook_index_title: Р¦РµРЅС‚СЂ РѕР±РјРµРЅР° РєРѕРґРѕРј
+codebook_index_label: Р”РѕРєСѓРјРµРЅС‚Р°С†РёСЏ РєРѕРґР°
+codebook_index_label_lang: РЇР·С‹Рє
+codebook_index_label_area: РћР±Р»Р°СЃС‚СЊ
+codebook_index_label_edit: Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ
+codebook_index_label_delete: РЈРґР°Р»РёС‚СЊ
+codebook_table_header_title: РќР°Р·РІР°РЅРёРµ
+codebook_table_header_desc: РћРїРёСЃР°РЅРёРµ
+codebook_table_header_author: РђРІС‚РѕСЂ
+codebook_table_header_lang: РЇР·С‹Рє
+codebook_table_header_area: РћР±Р»Р°СЃС‚СЊ
+codebook_table_header_actions: Р”РµР№СЃС‚РІРёСЏ
+codebook_settings_label: РќР°СЃС‚СЂРѕР№РєРё Codebook
+codebook_settings_text: Р·РґРµСЃСЊ РєР°РєРѕР№-С‚Рѕ С‚РµРєСЃС‚
+codebook_admin_title: РђРґРјРёРЅРёСЃС‚СЂРёСЂРѕРІР°РЅРёРµ РѕР±РјРµРЅР° РєРѕРґРѕРј РІ Codebook
+codebook_admin_text: Р”РѕР±Р°РІРёС‚СЊ СЏР·С‹РєРё РёР»Рё РєР°С‚РµРіСЂРёРё Р·РґРµСЃСЊ; РІС‹ РјРѕР¶РµС‚Рµ СѓРґР°Р»РёС‚СЊ РІСЃРµ СЌР»РµРјРµРЅС‚С‹, Сѓ РєРѕС‚РѕСЂС‹С… РЅРµС‚ РґРѕРєСѓРјРµРЅС‚РѕРІ СЃ РёСЃС…РѕРґРЅС‹Рј РєРѕРґРѕРј
+codebook_admin_label_language: Р”РѕР±Р°РІРёС‚СЊ СЏР·С‹Рє РїСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёСЏ
+codebook_admin_label_available: Р”РѕСЃС‚СѓРїРЅС‹Рµ СЏР·С‹РєРё РїСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёСЏ
+codebook_admin_label_area: Р”РѕР±Р°РІРёС‚СЊ РєР°С‚РµРіРѕСЂРёСЋ
+codebook_admin_label_impex: РРјРїРѕСЂС‚ Рё СЌРєСЃРїРѕСЂС‚
+codebook_admin_label_export: Р­РєСЃРїРѕСЂС‚ РІСЃРµС… РІР°С€РёС… СЏР·С‹РєРѕРІ, РѕР±Р»Р°СЃС‚РµР№ Рё РґРѕРєСѓРјРµРЅС‚РѕРІ РІ РѕРґРёРЅ С„Р°Р№Р»
+codebook_admin_label_add: Р’РїРµСЂРµРґ!
+codebook_admin_label_adddefaultvalues: Р’С‹ РјРѕР¶РµС‚Рµ РґРѕР±Р°РІРёС‚СЊ Р·РґРµСЃСЊ РєР°РєРёРµ-С‚Рѕ Р·РЅР°С‡РµРЅРёСЏ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ.
+codebook_form_label_title: РќР°Р·РІР°РЅРёРµ
+codebook_form_label_area: РћР±Р»Р°СЃС‚СЊ
+codebook_form_label_author: РђРІС‚РѕСЂ
+codebook_form_label_lang: РЇР·С‹Рє
+codebook_form_label_desc: РљСЂР°С‚РєРѕРµ РѕРїРёСЃР°РЅРёРµ
+codebook_form_label_code: РСЃС…РѕРґРЅС‹Р№ РєРѕРґ
+codebook_form_label_all: Р’СЃРµ
+codebook_form_link_showlinenumbers: РћС‚РѕР±СЂР°Р·РёС‚СЊ РЅРѕРјРµСЂР° СЃС‚СЂРѕРє
+codebook_form_link_dontshowlinenumbers: РЎРєСЂС‹С‚СЊ РЅРѕРјРµСЂР° СЃС‚СЂРѕРє
+codebook_form_new_submit: РЎРѕР·РґР°С‚СЊ
+codebook_form_edit_submit: РћР±РЅРѕРІРёС‚СЊ
+codebook_form_filter_submit: Р¤РёР»СЊС‚СЂРѕРІР°С‚СЊ
+codebook_form_new_title: РџРѕРґРµР»РёСЃСЊ РёСЃС…РѕРґРЅС‹Рј РєРѕРґРѕРј!
+codebook_form_edit_title: Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ РґРѕРєСѓРјРµРЅС‚
+codebook_menu_title: Codebook РјРµРЅСЋ
+codebook_menu_dashboard: РџР°РЅРµР»СЊ Codebook
+codebook_menu_add: Р”РѕР±Р°РІРёС‚СЊ РєРѕРґ
+codebook_menu_admin: РђРґРјРёРЅРёСЃС‚СЂРёСЂРѕРІР°РЅРёРµ
+codebook_plugin_view_preferences: РћС‚РєСЂС‹С‚СЊ РЅР°СЃС‚СЂРѕР№РєРё
+codebook_show_line_numbers: РћС‚РѕР±СЂР°Р·РёС‚СЊ РЅРѕРјРµСЂР° СЃС‚СЂРѕРєРє
