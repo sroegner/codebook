@@ -1,0 +1,46 @@
+ru:
+  codebook_title: Поделиться кодом
+  codebook_delete_confirm: Вы уверены
+  codebook_index_title: Центр обмена кодом
+  codebook_index_label: Документация кода
+  codebook_index_label_lang: Язык
+  codebook_index_label_area: Область
+  codebook_index_label_edit: Редактировать
+  codebook_index_label_delete: Удалить
+  codebook_table_header_title: Название
+  codebook_table_header_desc: Описание
+  codebook_table_header_author: Автор
+  codebook_table_header_lang: Язык
+  codebook_table_header_area: Область
+  codebook_table_header_actions: Действия
+  codebook_settings_label: Настройки Codebook
+  codebook_settings_text: здесь какой-то текст
+  codebook_admin_title: Администрирование обмена кодом в Codebook
+  codebook_admin_text: Добавить языки или категрии здесь; вы можете удалить все элементы, у которых нет документов с исходным кодом
+  codebook_admin_label_language: Добавить язык программирования
+  codebook_admin_label_available: Доступные языки программирования
+  codebook_admin_label_area: Добавить категорию
+  codebook_admin_label_impex: Импорт и экспорт
+  codebook_admin_label_export: Экспорт всех ваших языков, областей и документов в один файл
+  codebook_admin_label_add: Вперед!
+  codebook_admin_label_adddefaultvalues: Вы можете добавить здесь какие-то значения по умолчанию.
+  codebook_form_label_title: Название
+  codebook_form_label_area: Область
+  codebook_form_label_author: Автор
+  codebook_form_label_lang: Язык
+  codebook_form_label_desc: Краткое описание
+  codebook_form_label_code: Исходный код
+  codebook_form_label_all: Все
+  codebook_form_link_showlinenumbers: Отобразить номера строк
+  codebook_form_link_dontshowlinenumbers: Скрыть номера строк
+  codebook_form_new_submit: Создать
+  codebook_form_edit_submit: Обновить
+  codebook_form_filter_submit: Фильтровать
+  codebook_form_new_title: Поделись исходным кодом!
+  codebook_form_edit_title: Редактировать документ
+  codebook_menu_title: Codebook меню
+  codebook_menu_dashboard: Панель Codebook
+  codebook_menu_add: Добавить код
+  codebook_menu_admin: Администрирование
+  codebook_plugin_view_preferences: Открыть настройки
+  codebook_show_line_numbers: Отобразить номера строкк
