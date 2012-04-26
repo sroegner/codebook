@@ -1,0 +1,47 @@
+fr:
+  codebook_title: Codebook
+  codebook_delete_confirm: Supprimer?
+  codebook_index_title: Codebook - Accueil
+  codebook_index_label: Codes
+  codebook_index_label_lang: Langage
+  codebook_index_label_area: Catégorie
+  codebook_index_label_edit: Modifier
+  codebook_index_label_delete: Supprimer
+  codebook_table_header_title: Titre
+  codebook_table_header_desc: Description
+  codebook_table_header_author: Auteur
+  codebook_table_header_lang: Langage
+  codebook_table_header_area: Catégorie
+  codebook_table_header_actions: Actions
+  codebook_settings_label: Configuration de Codebook
+  codebook_settings_text: un bout de texte
+  codebook_admin_title: Codebook - Admin
+  codebook_admin_text: Ajoutez ici des langues ou des catégories; vous pouvez supprimer les items vides
+  codebook_admin_label_language: Ajouter un langage
+  codebook_admin_label_available: Langages disponibles
+  codebook_admin_label_area: Ajouter une catégorie
+  codebook_admin_label_impex: Importer ou Exporter
+  codebook_admin_label_export: Exportera tous vos langages, catégories et codes dans un fichier
+  codebook_admin_label_add: Go!
+  codebook_admin_label_adddefaultvalues: Vous pouvez ajouter des valeurs par défaut ici.
+  codebook_form_label_title: Titre
+  codebook_form_label_area: Catégorie
+  codebook_form_label_author: Auteur
+  codebook_form_label_lang: Langage
+  codebook_form_label_desc: Description
+  codebook_form_label_code: Code source
+  codebook_form_label_all: Tous
+  codebook_form_link_showlinenumbers: Afficher les numéros de ligne
+  codebook_form_link_dontshowlinenumbers: Masquer les numéros de ligne
+  codebook_form_new_submit: Créer
+  codebook_form_edit_submit: Mettre à jour
+  codebook_form_filter_submit: Filtrer
+  codebook_form_new_title: Partagez du code dès aujourd'hui !
+  codebook_form_edit_title: Modifier le code
+  codebook_menu_title: Codebook - Menu
+  codebook_menu_dashboard: Codebook - Panneau de contrôle
+  codebook_menu_add: Ajouter du Code
+  codebook_menu_admin: Administration
+  codebook_plugin_view_preferences: Préférences d'affichage
+  codebook_show_line_numbers: Numéros de ligne
+
